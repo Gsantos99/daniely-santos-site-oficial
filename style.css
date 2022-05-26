@@ -6,7 +6,7 @@
 }
 
 :root {
-  --hue: 190;
+  --hue: 160;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -64,7 +64,7 @@ section {
 }
 
 section header h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.08rem;
@@ -322,7 +322,7 @@ body.menu-expanded button path {
 }
 
 #home img {
-  width: 26.4rem;
+  width: 46rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
@@ -647,7 +647,7 @@ footer .social-links {
   }
 
   #home h1 {
-    font-size: 5.2rem;
+    font-size: 6rem;
   }
 
   #home .content p {
@@ -671,11 +671,12 @@ footer .social-links {
   }
 
   #home .button {
-    margin: 0;
+    margin: 0rem;
   }
 
+ 
   #home img {
-    width: 42rem;
+    width: 55rem;
   }
 
   /*=== SERVICES =================================*/

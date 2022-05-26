@@ -714,7 +714,7 @@ footer .social-links {
   /*=== CONTACT =================================*/
 
   #contact .wrapper {
-    grid-template-columns: 1fr 57.5rem;
+    grid-template-columns: 1fr 60rem;
     grid-template-areas: 'A B';
   }
 

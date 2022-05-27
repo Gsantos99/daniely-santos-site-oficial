@@ -14,18 +14,17 @@ function onScroll() {
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
 
-  // verificar se a seção passou da linha
-  // quais dados vou precisar?
+
   const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-  // verificar se a base está abaixo da linha alvo
+  
 
   const sectionEndsAt = sectionTop + sectionHeight
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
-  // limites da seção
+ 
   const sectionBoundaries =
     sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
@@ -38,13 +37,17 @@ function activateMenuAtCurrentSection(section) {
   }
 }
 
+
+
 function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    document.body.classList.add('scroll');
   } else {
-    navigation.classList.remove('scroll')
+    document.body.classList.remove('scroll');
   }
 }
+
+
 
 function showBackToTopButtonOnScroll() {
   if (scrollY > 550) {

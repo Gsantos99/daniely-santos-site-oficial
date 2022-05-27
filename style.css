@@ -168,6 +168,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
+  background-color: rgb(116, 201, 116) ;
 
   z-index: 100;
 }

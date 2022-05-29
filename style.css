@@ -43,7 +43,14 @@ body {
   overflow: overlay;
 
   background-color: var(--bg-light);
+
 }
+
+a {
+  text-decoration: none;
+}
+
+
 
 .wrapper {
   width: min(50rem, 100%);

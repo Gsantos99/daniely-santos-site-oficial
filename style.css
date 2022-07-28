@@ -254,7 +254,7 @@ body.menu-expanded .menu {
   margin-top: 6rem;
 
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.4rem; 
   line-height: 3.1rem;
 }
 
@@ -323,6 +323,7 @@ body.menu-expanded button path {
 
 #home .button {
   margin-inline: auto;
+
 }
 
 #home p {
@@ -650,12 +651,12 @@ footer .social-links {
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-      'A B'
-      'C C';
+      'A A'
+      'C C ';
   }
 
   #home .col-a {
-    text-align: left;
+    text-align: center;
     align-self: center;
   }
 
@@ -685,11 +686,23 @@ footer .social-links {
 
   #home .button {
     margin: 0rem;
+    
   }
 
  
   #home img {
     width: 55rem;
+
+  }
+
+  #home .wrapper .col-a .content .button{
+   margin: 0 auto;
+   margin-bottom: 2rem;
+  }
+
+  #home .wrapper .col-a  h4{
+    margin-top:1rem;
+
   }
 
   /*=== SERVICES =================================*/

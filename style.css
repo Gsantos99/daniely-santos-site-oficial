@@ -51,9 +51,14 @@ a {
   color:white;
 }
 
+.autor{
+  transition-property: font-size;
+  transition-duration: 1s;
+}
+
 .autor:hover{
 font-size: 20px;
-transition: 250ms;
+transition: all 1s ;
 }
 
 
@@ -104,7 +109,7 @@ section header h1 {
 
 section .content p {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 150%;
 
   color: var(--paragraph);
@@ -400,7 +405,7 @@ body.menu-expanded button path {
 /*=== ABOUT =================================*/
 #about {
   text-align: left;
-  background-color: var(--brand-beige);
+  background-color: var(--bg-light);
 }
 
 #about header h2 {
@@ -706,6 +711,11 @@ footer .social-links {
   }
 
   /*=== SERVICES =================================*/
+  
+  #services{
+    background-color: var(--brand-beige);
+  }
+  
   #services h2 {
     width: 47rem;
     margin-inline: auto;

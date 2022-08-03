@@ -157,6 +157,10 @@ section .content p {
   fill: var(--brand-light);
 }
 
+#benefits .card circle {
+  fill: var(--brand-light); 
+}
+
 #navigation .logo path[fill*='#00856F'],
 #backToTopButton circle {
   fill: var(--primary-color);
@@ -377,7 +381,16 @@ body.menu-expanded button path {
   line-height: 150%;
 }
 
+#home .content h2 {
+  color:var(--primary-color);
+  font-size:3.8rem;
+ 
+}
+
+
+
 /*=== SERVICES =================================*/
+
 #services header h2 {
   margin-bottom: 6rem;
 }
@@ -400,6 +413,51 @@ body.menu-expanded button path {
 
 #services .card h3 {
   margin-block: 1.6rem;
+}
+
+#services .wrapper h4 {
+ font-size:2rem;
+}
+
+/*=== BENEFITS =================================*/
+
+#benefits {
+  background-color: var(--brand-light);
+}
+
+#benefits  header h2 {
+  margin-bottom: 6rem;
+}
+
+#benefits  .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#benefits  .card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+
+#benefits  .card h3 {
+  margin-block: 1.6rem;
+}
+
+#benefits  .card h4 {
+  margin-block: 1.3rem;
+}
+
+#benefits  .content h4 {
+ font-size:2rem;
+ color:lightcoral;
+ 
 }
 
 /*=== ABOUT =================================*/
@@ -735,8 +793,31 @@ footer .social-links {
 
   #services .card {
     width: 30%;
-    flex-grow: 1;
+    flex-grow: 0.2;
   }
+
+
+   /*=== BENEFITS =================================*/
+   #benefits {
+    background-color: var(--brand-light);
+  }
+  
+  #benefits h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  #benefits .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #benefits .card {
+    width: 30%;
+    flex-grow: 0.2;
+  }
+
 
   /*=== ABOUT =================================*/
   #about .wrapper {

@@ -20,7 +20,7 @@
 
   font-size: 62.5%; /* 1rem = 10px */
 
-  --nav-height: 7.2rem;
+ 
 }
 
 html {
@@ -161,6 +161,15 @@ section .content p {
   fill: var(--brand-light); 
 }
 
+#review .card circle {
+  fill: var(--brand-light); 
+}
+
+#ebook .card circle {
+  fill: var(--brand-light); 
+}
+
+
 #navigation .logo path[fill*='#00856F'],
 #backToTopButton circle {
   fill: var(--primary-color);
@@ -184,7 +193,7 @@ body.menu-expanded #navigation .logo path,
 nav {
   display: flex;
 
-  height: var(--nav-height);
+  height: 7.2rem;
 
   position: fixed;
   top: 0;
@@ -249,7 +258,7 @@ body.menu-expanded .menu {
   width: 100vw;
   height: 100vh;
 
-  padding-top: var(--nav-height);
+  padding-top: 7.2rem;
 
   transition: transform 300ms;
   transform: translateY(0);
@@ -314,13 +323,13 @@ body.menu-expanded button path {
 /*=== #HOME =================================*/
 #home {
   padding-block: 0;
-  padding-top: calc(4.1rem + var(--nav-height));
+  padding-top: calc(4.1rem + 7.2rem);
 }
 
 #home::before {
   content: '';
   width: 100%;
-  height: calc(76% + var(--nav-height));
+  height: calc(76% + 7.2rem);
   background-color: var(--brand-light);
   display: block;
 
@@ -384,8 +393,10 @@ body.menu-expanded button path {
 #home .content h2 {
   color:var(--primary-color);
   font-size:3.8rem;
+  margin-bottom:2.5rem;
  
 }
+
 
 
 
@@ -459,6 +470,98 @@ body.menu-expanded button path {
  color:lightcoral;
  
 }
+
+/*=== REVIEW =================================*/
+
+#review {
+  background-color: var(--bg-light);
+}
+
+#review  header h2 {
+  margin-bottom: 6rem;
+}
+
+#review  .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#review  .card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+
+#review   .card h3 {
+  margin-block: 1.6rem;
+}
+
+#review  .card h4 {
+  margin-block: 1.3rem;
+}
+
+#review   .content h4 {
+ font-size:2rem;
+ color:lightcoral;
+ 
+}
+
+#review .wrapper .content .cards .card .profile-pic  {
+  width: 10rem;
+  display: block;
+ }
+
+
+/*=== EBOOK =================================*/
+#ebook {
+  background-color: #fff;
+}
+
+#ebook  header h2 {
+  margin-bottom: 6rem;
+}
+
+#ebook .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#ebook .card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+
+#ebook   .card h3 {
+  margin-block: 1.6rem;
+}
+
+#ebook  .card h4 {
+  margin-block: 1.3rem;
+}
+
+#ebook   .content h4 {
+ font-size:2rem;
+ color:lightcoral;
+ 
+}
+
+#ebook .wrapper .content .cards .card img {
+  width: 35rem;
+ 
+ }
 
 /*=== ABOUT =================================*/
 #about {
@@ -615,7 +718,7 @@ footer .social-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
   }
 
   nav#navigation .menu ul:nth-child(1) {
@@ -710,11 +813,11 @@ footer .social-links {
 
   /*=== HOME =================================*/
   #home::before {
-    height: calc(96% - var(--nav-height));
+    height: calc(96% - 7.2rem);
   }
 
   #home {
-    padding-top: var(--nav-height);
+    padding-top: 7.2rem;
   }
 
   #home .wrapper {
@@ -818,6 +921,73 @@ footer .social-links {
     flex-grow: 0.2;
   }
 
+  /*=== REVIEW =================================*/
+
+  #review  {
+    background-color: var(--brand-beige);
+  }
+  
+  #review h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  #review .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #review .card {
+    width: 30%;
+    flex-grow: 0.2;
+  }
+
+  #review .wrapper .content .cards .card .profile-pic  {
+    width: 8rem;
+    display: block;
+   }
+
+   /*=== EBOOK =================================*/
+
+   #ebook {
+    background-color: #fff;
+  }
+  
+  #ebook  h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  #ebook  .cards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #ebook  .card {
+    width: 30%;
+    flex-grow: 0.2;
+   
+  }
+  
+  #ebook  .wrapper .content .cards .card img {
+    width: 45rem;
+  
+  }
+
+  #ebook  .wrapper .content .cards .card{
+    transition-property: background-color;
+    transition: 1s ;
+  }
+
+  #ebook  .wrapper .content .cards .card:hover {
+    background-color: lightgreen;
+    transition-property: background-color;
+    transition: 1s ease-in;
+  }
+ 
 
   /*=== ABOUT =================================*/
   #about .wrapper {

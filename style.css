@@ -43,29 +43,32 @@ body {
   overflow: overlay;
 
   background-color: var(--bg-light);
+}
 
+.h2-title {
+  font-size: 30px;
 }
 
 a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
-.autor{
+.autor {
   transition-property: font-size;
   transition-duration: 1s;
 }
 
-.autor:hover{
-font-size: 20px;
-transition: all 1s ;
+.autor:hover {
+  font-size: 20px;
+  transition: all 1s;
 }
-
 
 .wrapper {
   width: min(50rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
+  /* padding: 1.85rem */
 }
 
 ul {
@@ -93,7 +96,7 @@ section header h4 {
 }
 
 section header h2 {
-  font-size: 3rem;
+  font-size: 1.6rem;
   line-height: 3.9rem;
 
   color: var(--headline);
@@ -185,7 +188,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: rgb(116, 201, 116) ;
+  background-color: rgb(116, 201, 116);
 
   z-index: 100;
 }
@@ -259,7 +262,7 @@ body.menu-expanded .menu {
   margin-top: 6rem;
 
   font-weight: 700;
-  font-size: 2.4rem; 
+  font-size: 2.4rem;
   line-height: 3.1rem;
 }
 
@@ -328,7 +331,6 @@ body.menu-expanded button path {
 
 #home .button {
   margin-inline: auto;
-
 }
 
 #home p {
@@ -691,31 +693,27 @@ footer .social-links {
 
   #home .button {
     margin: 0rem;
-    
   }
 
- 
   #home img {
     width: 55rem;
-
   }
 
-  #home .wrapper .col-a .content .button{
-   margin: 0 auto;
-   margin-bottom: 2rem;
+  #home .wrapper .col-a .content .button {
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 
-  #home .wrapper .col-a  h4{
-    margin-top:1rem;
-
+  #home .wrapper .col-a h4 {
+    margin-top: 1rem;
   }
 
   /*=== SERVICES =================================*/
-  
-  #services{
+
+  #services {
     background-color: var(--brand-beige);
   }
-  
+
   #services h2 {
     width: 47rem;
     margin-inline: auto;
@@ -762,7 +760,7 @@ footer .social-links {
   footer {
     padding-block: 8rem;
   }
-  
+
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
@@ -772,13 +770,12 @@ footer .social-links {
     align-self: center;
   }
 
-
   footer .col-b {
     align-self: center;
     justify-self: flex-end;
   }
 
   footer p {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 }

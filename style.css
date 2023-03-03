@@ -19,8 +19,6 @@
   --bg-light: hsl(180, 14%, 97%);
 
   font-size: 62.5%; /* 1rem = 10px */
-
- 
 }
 
 html {
@@ -52,6 +50,14 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+a.button {
+ margin: 30px
+}
+
+a.button.btn-page{
+  margin: 20px auto;
 }
 
 .autor {
@@ -161,17 +167,16 @@ section .content p {
 }
 
 #benefits .card circle {
-  fill: var(--brand-light); 
+  fill: var(--brand-light);
 }
 
 #review .card circle {
-  fill: var(--brand-light); 
+  fill: var(--brand-light);
 }
 
 #ebook .card circle {
-  fill: var(--brand-light); 
+  fill: var(--brand-light);
 }
-
 
 #navigation .logo path[fill*='#00856F'],
 #backToTopButton circle {
@@ -393,14 +398,10 @@ body.menu-expanded button path {
 }
 
 #home .content h2 {
-  color:var(--primary-color);
-  font-size:3.8rem;
-  margin-bottom:2.5rem;
- 
+  color: var(--primary-color);
+  font-size: 3.8rem;
+  margin-bottom: 2.5rem;
 }
-
-
-
 
 /*=== SERVICES =================================*/
 
@@ -429,7 +430,7 @@ body.menu-expanded button path {
 }
 
 #services .wrapper h4 {
- font-size:2rem;
+  font-size: 2rem;
 }
 
 /*=== BENEFITS =================================*/
@@ -438,17 +439,17 @@ body.menu-expanded button path {
   background-color: var(--brand-light);
 }
 
-#benefits  header h2 {
+#benefits header h2 {
   margin-bottom: 6rem;
 }
 
-#benefits  .cards {
+#benefits .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-#benefits  .card {
+#benefits .card {
   padding: 2.4rem;
   text-align: left;
 
@@ -458,19 +459,17 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
-
-#benefits  .card h3 {
+#benefits .card h3 {
   margin-block: 1.6rem;
 }
 
-#benefits  .card h4 {
+#benefits .card h4 {
   margin-block: 1.3rem;
 }
 
-#benefits  .content h4 {
- font-size:2rem;
- color:lightcoral;
- 
+#benefits .content h4 {
+  font-size: 2rem;
+  color: lightcoral;
 }
 
 /*=== REVIEW =================================*/
@@ -479,17 +478,17 @@ body.menu-expanded button path {
   background-color: var(--bg-light);
 }
 
-#review  header h2 {
+#review header h2 {
   margin-bottom: 6rem;
 }
 
-#review  .cards {
+#review .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-#review  .card {
+#review .card {
   padding: 2.4rem;
   text-align: left;
 
@@ -499,33 +498,30 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
-
-#review   .card h3 {
+#review .card h3 {
   margin-block: 1.6rem;
 }
 
-#review  .card h4 {
+#review .card h4 {
   margin-block: 1.3rem;
 }
 
-#review   .content h4 {
- font-size:2rem;
- color:lightcoral;
- 
+#review .content h4 {
+  font-size: 2rem;
+  color: lightcoral;
 }
 
-#review .wrapper .content .cards .card .profile-pic  {
+#review .wrapper .content .cards .card .profile-pic {
   width: 10rem;
   display: block;
- }
-
+}
 
 /*=== EBOOK =================================*/
 #ebook {
   background-color: #fff;
 }
 
-#ebook  header h2 {
+#ebook header h2 {
   margin-bottom: 6rem;
 }
 
@@ -545,25 +541,22 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
-
-#ebook   .card h3 {
+#ebook .card h3 {
   margin-block: 1.6rem;
 }
 
-#ebook  .card h4 {
+#ebook .card h4 {
   margin-block: 1.3rem;
 }
 
-#ebook   .content h4 {
- font-size:2rem;
- color:lightcoral;
- 
+#ebook .content h4 {
+  font-size: 2rem;
+  color: lightcoral;
 }
 
 #ebook .wrapper .content .cards .card img {
   width: 35rem;
- 
- }
+}
 
 /*=== ABOUT =================================*/
 #about {
@@ -580,8 +573,14 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-#about .col-b img{
+#about .col-b img {
   border-radius: 100%;
+}
+
+#about .col-b .btn-page {
+  /* background-color: red; */
+  margin: 30px auto;
+
 }
 
 /*=== CONTACT =================================*/
@@ -607,7 +606,9 @@ body.menu-expanded button path {
   gap: 0.8rem;
 }
 
-
+#contact img {
+ border-radius: 100%;
+}
 
 /*=== FOOTER =================================*/
 footer {
@@ -684,7 +685,7 @@ footer .social-links {
   }
 
   section {
-    padding-block: 16rem;
+    padding-block: 2rem;
   }
 
   section header h2 {
@@ -859,21 +860,25 @@ footer .social-links {
   }
 
   #home .button {
-    margin: 0rem;
+    margin-inline: auto;
   }
 
   #home img {
     width: 55rem;
   }
 
-  #home .wrapper .col-a .content .button {
+  #home .wrapper .col-a .content .button .btn-page {
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   #home .wrapper .col-a h4 {
     margin-top: 1rem;
   }
+   
+
+  
+  
 
   /*=== SERVICES =================================*/
 
@@ -897,12 +902,11 @@ footer .social-links {
     flex-grow: 0.2;
   }
 
-
-   /*=== BENEFITS =================================*/
-   #benefits {
+  /*=== BENEFITS =================================*/
+  #benefits {
     background-color: var(--brand-light);
   }
-  
+
   #benefits h2 {
     width: 47rem;
     margin-inline: auto;
@@ -921,10 +925,10 @@ footer .social-links {
 
   /*=== REVIEW =================================*/
 
-  #review  {
+  #review {
     background-color: var(--brand-beige);
   }
-  
+
   #review h2 {
     width: 47rem;
     margin-inline: auto;
@@ -941,51 +945,48 @@ footer .social-links {
     flex-grow: 0.2;
   }
 
-  #review .wrapper .content .cards .card .profile-pic  {
+  #review .wrapper .content .cards .card .profile-pic {
     width: 8rem;
     display: block;
-   }
+  }
 
-   /*=== EBOOK =================================*/
+  /*=== EBOOK =================================*/
 
-   #ebook {
+  #ebook {
     background-color: #fff;
   }
-  
-  #ebook  h2 {
+
+  #ebook h2 {
     width: 47rem;
     margin-inline: auto;
   }
 
-  #ebook  .cards {
+  #ebook .cards {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 4rem;
   }
 
-  #ebook  .card {
+  #ebook .card {
     width: 30%;
     flex-grow: 0.2;
-   
   }
-  
-  #ebook  .wrapper .content .cards .card img {
+
+  #ebook .wrapper .content .cards .card img {
     width: 45rem;
-  
   }
 
-  #ebook  .wrapper .content .cards .card{
+  #ebook .wrapper .content .cards .card {
     transition-property: background-color;
-    transition: 1s ;
+    transition: 1s;
   }
 
-  #ebook  .wrapper .content .cards .card:hover {
+  #ebook .wrapper .content .cards .card:hover {
     background-color: lightgreen;
     transition-property: background-color;
     transition: 1s ease-in;
   }
- 
 
   /*=== ABOUT =================================*/
   #about .wrapper {
@@ -1015,7 +1016,7 @@ footer .social-links {
 
   /*=== FOOTER =================================*/
   footer {
-    padding-block: 8rem;
+    padding-block: 1.5rem;
   }
 
   footer .wrapper {

@@ -1,15 +1,15 @@
-window.addEventListener('scroll', onScroll)
+// window.addEventListener('scroll', onScroll)
 
-onScroll()
-function onScroll() {
-  showNavOnScroll()
-  showBackToTopButtonOnScroll()
+// onScroll()
+// function onScroll() {
+//   showNavOnScroll()
+//   showBackToTopButtonOnScroll()
 
-  activateMenuAtCurrentSection(home)
-  activateMenuAtCurrentSection(services)
-  activateMenuAtCurrentSection(about)
-  activateMenuAtCurrentSection(contact)
-}
+//   activateMenuAtCurrentSection(home)
+//   activateMenuAtCurrentSection(services)
+//   activateMenuAtCurrentSection(about)
+//   activateMenuAtCurrentSection(contact)
+// }
 
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
@@ -28,7 +28,7 @@ function activateMenuAtCurrentSection(section) {
   const sectionBoundaries =
     sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
-  const sectionId = section.getAttribute('id')
+  // const sectionId = section.getAttribute('id')
   const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
   menuElement.classList.remove('active')
@@ -65,17 +65,17 @@ function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
-ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 700
-}).reveal(`
-  #home, 
-  #home img, 
-  #home .stats, 
-  #services,
-  #services header,
-  #services .card
-  #about, 
-  #about header, 
-  #about .content`)
+// ScrollReveal({
+//   origin: 'top',
+//   distance: '30px',
+//   duration: 700
+// }).reveal(`
+//   #home, 
+//   #home img, 
+//   #home .stats, 
+//   #services,
+//   #services header,
+//   #services .card
+//   #about, 
+//   #about header, 
+//   #about .content`)

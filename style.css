@@ -86,7 +86,7 @@ img {
 }
 
 section {
-  padding-block: 10rem;
+  padding-block: 2rem;
 }
 
 section header h4 {
@@ -561,7 +561,7 @@ body.menu-expanded button path {
 /*=== ABOUT =================================*/
 #about {
   text-align: left;
-  background-color: var(--bg-light);
+  background-color: rgb(112, 165, 112);
 }
 
 #about header h2 {
@@ -586,6 +586,7 @@ body.menu-expanded button path {
 /*=== CONTACT =================================*/
 #contact {
   text-align: left;
+  background-color: rgb(142, 178, 142);
 }
 
 #contact header {
@@ -613,11 +614,11 @@ body.menu-expanded button path {
 /*=== FOOTER =================================*/
 footer {
   background-color: var(--primary-color);
-  padding-block: 6rem;
+  padding-block: 1rem;
 
   text-align: left;
 
-  color: white;
+  color: black;
 }
 
 footer .logo {

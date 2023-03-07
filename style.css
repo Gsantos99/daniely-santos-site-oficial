@@ -403,6 +403,8 @@ body.menu-expanded button path {
   margin-bottom: 2.5rem;
 }
 
+
+
 /*=== SERVICES =================================*/
 
 #services header h2 {
@@ -573,14 +575,25 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-#about .col-b img {
-  border-radius: 100%;
-}
+
 
 #about .col-b .btn-page {
-  /* background-color: red; */
   margin: 30px auto;
 
+}
+
+#about .col-b {
+text-align: center;
+}
+
+#about .col-b img {
+  border-radius: 100%;
+margin: 0 auto;
+  /* border: 2px solid blue; */
+  width: 350px;
+  height: 350px;
+  min-width: 200px;
+  min-height: 200px;
 }
 
 /*=== CONTACT =================================*/
@@ -827,7 +840,7 @@ footer .social-links {
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-      'A A'
+      'A A '
       'C C ';
   }
 
@@ -860,10 +873,8 @@ footer .social-links {
     flex: 1;
   }
 
-  #home .button {
-    margin-inline: auto;
-  }
 
+  
   #home img {
     width: 55rem;
   }
@@ -1003,6 +1014,8 @@ footer .social-links {
   #about .content p {
     margin-bottom: 0;
   }
+
+ 
 
   /*=== CONTACT =================================*/
 
